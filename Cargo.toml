@@ -9,7 +9,10 @@ name = "natural_sort"
 crate-type = ["dylib"]
 
 [dependencies.postgres_extension]
-path = "https://github.com/thehydroimpulse/postgres-extension.rs"
+git = "https://github.com/thehydroimpulse/postgres-extension.rs"
 
 [dependencies.postgres_extension_macros]
-path = "https://github.com/thehydroimpulse/postgres-extension.rs"
+git = "https://github.com/thehydroimpulse/postgres-extension.rs"
+
+[dependencies.natord]
+git = "https://github.com/lifthrasiir/rust-natord.git"
