@@ -3,8 +3,8 @@ name = "natural_sort"
 version = "0.0.1"
 dependencies = [
  "natord 1.0.9 (git+https://github.com/lifthrasiir/rust-natord.git)",
- "postgres_extension 0.0.1 (git+https://github.com/thehydroimpulse/postgres-extension.rs)",
- "postgres_extension_macros 0.0.1 (git+https://github.com/thehydroimpulse/postgres-extension.rs)",
+ "postgres_extension 0.0.1 (git+https://github.com/jeff-davis/postgres-extension.rs.git?branch=fixes)",
+ "postgres_extension_macros 0.0.1 (git+https://github.com/jeff-davis/postgres-extension.rs.git?branch=fixes)",
 ]
 
 [[package]]
@@ -20,7 +20,7 @@ source = "git+https://github.com/lifthrasiir/rust-natord.git#93e5f0ace208e73ddfa
 [[package]]
 name = "postgres_extension"
 version = "0.0.1"
-source = "git+https://github.com/thehydroimpulse/postgres-extension.rs#5fdac67fae229e64f2dadbd98e85d56fb1ddaa41"
+source = "git+https://github.com/jeff-davis/postgres-extension.rs.git?branch=fixes#5b3651777c82a0d9aa2ec9b14f0903443b28cf9c"
 dependencies = [
  "libc 0.2.13 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
@@ -28,5 +28,5 @@ dependencies = [
 [[package]]
 name = "postgres_extension_macros"
 version = "0.0.1"
-source = "git+https://github.com/thehydroimpulse/postgres-extension.rs#5fdac67fae229e64f2dadbd98e85d56fb1ddaa41"
+source = "git+https://github.com/jeff-davis/postgres-extension.rs.git?branch=fixes#5b3651777c82a0d9aa2ec9b14f0903443b28cf9c"
 
