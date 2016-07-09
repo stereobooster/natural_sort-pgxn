@@ -1,0 +1,9 @@
+\set ECHO 0
+-- You should write your tests
+SELECT natural_sort('test');
+ natural_sort 
+--------------
+ 
+(1 row)
+
+ROLLBACK;

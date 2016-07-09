@@ -1,0 +1,35 @@
+{
+    "name": "natural_sort",
+    "abstract": "Sorting for Humans",
+    "description": "A long description",
+    "version": "0.0.1",
+    "maintainer": "stereobooster <stereobooster@gmail.com>",
+    "license": "MIT",
+    "provides": {
+        "natural_sort": {
+            "abstract": "Sorting for Humans",
+            "file": "sql/natural_sort.sql",
+            "docfile": "doc/natural_sort.md",
+            "version": "0.0.1"
+        }
+    },
+    "release_status": "unstable",
+    "resources": {
+        "bugtracker": {
+            "web": "http://change.me"
+        },
+        "repository": {
+          "url":  "git://change.me/natural_sort.git",
+          "web":  "http://change.me",
+          "type": "git"
+        }
+    },
+
+    "generated_by": "stereobooster <stereobooster@gmail.com>",
+
+
+    "meta-spec": {
+        "version": "1.0.0",
+        "url": "http://pgxn.org/meta/spec.txt"
+    }
+}
