@@ -1,7 +1,22 @@
 natural_sort
 ============
 
-A long description
+To build it:
+
+Install [rustup](https://www.rustup.rs/).
+
+Install nightly build
+
+```
+rustup install nightly
+rustup override set nightly
+```
+
+Build with cargo
+
+```
+cargo build
+```
 
 To build it, just do this:
 
