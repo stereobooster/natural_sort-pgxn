@@ -11,23 +11,25 @@ use postgres_extension::{VarChar};
 extern crate libc;
 use libc::{c_int};
 
-use std::str::FromStr;
 use std::cmp::Ordering;
 extern crate natord;
+use std::mem;
 
-pg_module!(version: 90500);
+pg_module!(version: 90400);
 
 #[pg_export]
-pub fn naturel_compare(a: VarChar, b: VarChar) -> c_int {
-  let a_str = a.p;
-  let b_str = b.p;
-  let res = natord::compare(a_str, b_str);
+pub fn natural_compare(a: VarChar, b: VarChar) -> c_int {
+  unsafe {
+    let a_str = mem::transmute::<VarChar, &str>(a);
+    let b_str = mem::transmute::<VarChar, &str>(b);
+    let res = natord::compare(&*a_str, &*b_str);
 
-  if res == Ordering::Greater {
-    return 1;
-  } else if res == Ordering::Less {
-    return -1;
-  } else {
-    return 0;
+    if res == Ordering::Greater {
+      return 1;
+    } else if res == Ordering::Less {
+      return -1;
+    } else {
+      return 0;
+    }
   }
 }

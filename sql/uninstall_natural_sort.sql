@@ -1,1 +1,1 @@
-DROP FUNCTION natural_sort(text);
+DROP FUNCTION natural_compare(text, text);
