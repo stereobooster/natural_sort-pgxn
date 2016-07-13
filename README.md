@@ -3,24 +3,14 @@ natural_sort
 
 To build it:
 
-Install [rustup](https://www.rustup.rs/).
+Install [rustup](https://www.rustup.rs/). Install nightly build
 
-Install nightly build
+    rustup install nightly
+    rustup override set nightly
 
-```
-rustup install nightly
-rustup override set nightly
-```
+Build with cargo, test and install
 
-Build with cargo
-
-```
-cargo build
-```
-
-To build it, just do this:
-
-    make
+    cargo build
     make installcheck
     make install
 

@@ -1,6 +1,7 @@
 - http://pgxn.org/faq/
 - https://github.com/guedes/pgxn-utils/
 - https://github.com/thehydroimpulse/postgres-extension.rs
+- https://github.com/guedes/pgvm
 
 ## Types
 
